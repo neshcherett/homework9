@@ -58,9 +58,10 @@ public class Task1 {
         return counterElementsGreaterLeftNeighbor;
     }
 
-    private static int[] createRandomArray(int a) {
-        int[] arr = new int[a];
+    private static int[] createRandomArray(int lengthArray) {
+        int[] arr = new int[lengthArray];
         Random random = new Random();
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100);
         }
